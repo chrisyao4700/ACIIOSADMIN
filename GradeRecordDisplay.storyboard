@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OXp-ZK-X6a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Grade Record Display View Controller-->
+        <scene sceneID="6bS-BO-EYq">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="OXp-ZK-X6a" customClass="GradeRecordDisplayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gNj-CA-TOn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Trt-WY-pKj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c03-LQ-8NP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SVI-O5-Pec">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dlX-H9-xcv">
+                                    <size key="itemSize" width="150" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="add_cell" id="pK1-As-tRl">
+                                        <rect key="frame" x="10" y="10" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW GRADE RECORD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmb-VL-GHy">
+                                                    <rect key="frame" x="20" y="20" width="110" height="160"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="cmb-VL-GHy" firstAttribute="leading" secondItem="pK1-As-tRl" secondAttribute="leadingMargin" constant="12" id="8Jk-SA-E8n"/>
+                                            <constraint firstItem="cmb-VL-GHy" firstAttribute="top" secondItem="pK1-As-tRl" secondAttribute="topMargin" constant="12" id="Ge9-w3-IDi"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="cmb-VL-GHy" secondAttribute="trailing" constant="12" id="Q19-r3-Ysa"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="cmb-VL-GHy" secondAttribute="bottom" constant="12" id="tLk-uJ-gT0"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="info_cell" id="oRo-WC-wVM" customClass="GradeRecordCollectionViewCell">
+                                        <rect key="frame" x="215" y="10" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRADE #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9c-Fg-sag">
+                                                    <rect key="frame" x="20" y="20" width="110" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="I3g-KD-iEA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Woo-y1-CTk">
+                                                    <rect key="frame" x="20" y="49" width="110" height="131"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Woo-y1-CTk" secondAttribute="trailing" constant="12" id="08g-Ff-yHe"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Woo-y1-CTk" secondAttribute="bottom" constant="12" id="IFi-cp-Fsm"/>
+                                            <constraint firstItem="Woo-y1-CTk" firstAttribute="leading" secondItem="oRo-WC-wVM" secondAttribute="leadingMargin" constant="12" id="Il7-gK-Qs3"/>
+                                            <constraint firstItem="e9c-Fg-sag" firstAttribute="top" secondItem="oRo-WC-wVM" secondAttribute="topMargin" constant="12" id="O2e-aZ-Gca"/>
+                                            <constraint firstItem="e9c-Fg-sag" firstAttribute="leading" secondItem="oRo-WC-wVM" secondAttribute="leadingMargin" constant="12" id="O38-Yb-tMC"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="e9c-Fg-sag" secondAttribute="trailing" constant="12" id="Uma-NM-CHM"/>
+                                            <constraint firstItem="Woo-y1-CTk" firstAttribute="top" secondItem="e9c-Fg-sag" secondAttribute="bottom" constant="8" id="vND-gN-DtI"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="gradeLabel" destination="e9c-Fg-sag" id="3ys-nu-48p"/>
+                                            <outlet property="infoTextView" destination="Woo-y1-CTk" id="JQC-4R-xH2"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="OXp-ZK-X6a" id="Dol-Qh-8N1"/>
+                                    <outlet property="delegate" destination="OXp-ZK-X6a" id="MdL-bb-2fc"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Trt-WY-pKj" firstAttribute="top" secondItem="SVI-O5-Pec" secondAttribute="bottom" id="Pi0-FN-Cna"/>
+                            <constraint firstAttribute="trailing" secondItem="SVI-O5-Pec" secondAttribute="trailing" id="juT-yM-qf5"/>
+                            <constraint firstItem="SVI-O5-Pec" firstAttribute="leading" secondItem="c03-LQ-8NP" secondAttribute="leading" id="toF-lz-zgF"/>
+                            <constraint firstItem="SVI-O5-Pec" firstAttribute="top" secondItem="gNj-CA-TOn" secondAttribute="bottom" id="zSU-ih-UxH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentTable" destination="SVI-O5-Pec" id="ath-GL-bmU"/>
+                        <segue destination="aAj-AV-Afr" kind="show" identifier="toDetail" id="mgS-DJ-QwQ"/>
+                        <segue destination="azh-AA-r9W" kind="presentation" identifier="toAction" modalPresentationStyle="overFullScreen" id="cy1-fS-hWQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nt7-Wu-hfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.59999999999999" y="120.98950524737631"/>
+        </scene>
+        <!--GradeRecordDetail-->
+        <scene sceneID="j82-Ss-ONX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GradeRecordDetail" id="aAj-AV-Afr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1i-kE-bcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="121"/>
+        </scene>
+        <!--CYMultiAction-->
+        <scene sceneID="dlE-Uv-1Wq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CYMultiAction" id="azh-AA-r9W" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHP-mE-Ns4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="269"/>
+        </scene>
+    </scenes>
+</document>

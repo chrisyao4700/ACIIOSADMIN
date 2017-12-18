@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="ACI_CURRENT_USER" representedClassName="ACI_CURRENT_USER" syncable="YES" codeGenerationType="class">
+        <attribute name="category_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contact_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="data_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="main_campus_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="main_campus_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ACI_ORDER_PAYMENT" representedClassName="ACI_ORDER_PAYMENT" syncable="YES" codeGenerationType="class">
+        <attribute name="data_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ACI_PHOTO" representedClassName="ACI_PHOTO" syncable="YES" codeGenerationType="class">
+        <attribute name="image_data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="photo_name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ACI_CURRENT_USER" positionX="-63" positionY="-18" width="128" height="210"/>
+        <element name="ACI_PHOTO" positionX="-54" positionY="54" width="128" height="75"/>
+        <element name="ACI_ORDER_PAYMENT" positionX="-54" positionY="63" width="128" height="75"/>
+    </elements>
+</model>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nbE-1H-I9h">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Logon View Controller-->
+        <scene sceneID="PXc-he-sjp">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="nbE-1H-I9h" customClass="LogonViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DHJ-cK-Ipr"/>
+                        <viewControllerLayoutGuide type="bottom" id="y7A-zd-m6Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dAp-6P-LP3">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oc0-hL-AJH">
+                                <rect key="frame" x="66" y="911" width="701" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EHV-Fv-GGm">
+                                <rect key="frame" x="66" y="949" width="701" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOw-ui-1uG">
+                                <rect key="frame" x="342.5" y="987" width="149" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8bA-AH-jq2"/>
+                                    <constraint firstAttribute="width" constant="149" id="Dys-B5-stq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="LOGON">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedLogon:" destination="nbE-1H-I9h" eventType="touchUpInside" id="rZ9-LY-JDT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACI HACIENDA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feO-N4-P3V">
+                                <rect key="frame" x="292" y="61" width="250" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="W9a-bR-M3W"/>
+                                    <constraint firstAttribute="width" constant="250" id="v94-y0-ca8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4z-Dk-ery">
+                                <rect key="frame" x="693" y="1073" width="121" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="Gi5-Ht-3qM"/>
+                                    <constraint firstAttribute="height" constant="31" id="It2-K6-Qvi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ACI-badge-large" translatesAutoresizingMaskIntoConstraints="NO" id="ies-Nh-Aci">
+                                <rect key="frame" x="166" y="306" width="500" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="8bO-1d-Fky"/>
+                                    <constraint firstAttribute="width" constant="500" id="UGB-wM-RlM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="feO-N4-P3V" firstAttribute="top" secondItem="DHJ-cK-Ipr" secondAttribute="bottom" constant="41" id="1H4-LO-VLC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Oc0-hL-AJH" secondAttribute="trailing" constant="47" id="2Kf-bR-bC5"/>
+                            <constraint firstItem="Oc0-hL-AJH" firstAttribute="top" secondItem="ies-Nh-Aci" secondAttribute="bottom" constant="105" id="7g7-15-QZV"/>
+                            <constraint firstItem="ies-Nh-Aci" firstAttribute="centerX" secondItem="dAp-6P-LP3" secondAttribute="centerX" constant="-1" id="8F0-od-1Eu"/>
+                            <constraint firstItem="EHV-Fv-GGm" firstAttribute="leading" secondItem="dAp-6P-LP3" secondAttribute="leadingMargin" constant="46" id="M0p-Ve-7a4"/>
+                            <constraint firstItem="Oc0-hL-AJH" firstAttribute="leading" secondItem="dAp-6P-LP3" secondAttribute="leadingMargin" constant="46" id="Nk9-YS-Nt3"/>
+                            <constraint firstItem="B4z-Dk-ery" firstAttribute="trailing" secondItem="dAp-6P-LP3" secondAttribute="trailingMargin" id="Phb-Ml-K4x"/>
+                            <constraint firstItem="feO-N4-P3V" firstAttribute="centerX" secondItem="dAp-6P-LP3" secondAttribute="centerX" id="Rp7-jh-LpC"/>
+                            <constraint firstItem="y7A-zd-m6Q" firstAttribute="top" secondItem="B4z-Dk-ery" secondAttribute="bottom" constant="8" id="gmK-0X-CD3"/>
+                            <constraint firstItem="EHV-Fv-GGm" firstAttribute="top" secondItem="Oc0-hL-AJH" secondAttribute="bottom" constant="8" id="ibB-FF-IdJ"/>
+                            <constraint firstItem="OOw-ui-1uG" firstAttribute="top" secondItem="EHV-Fv-GGm" secondAttribute="bottom" constant="8" id="nZl-pD-lo8"/>
+                            <constraint firstItem="OOw-ui-1uG" firstAttribute="centerX" secondItem="dAp-6P-LP3" secondAttribute="centerX" id="p20-8N-4ix"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EHV-Fv-GGm" secondAttribute="trailing" constant="47" id="qyp-P5-YcF"/>
+                            <constraint firstItem="y7A-zd-m6Q" firstAttribute="top" secondItem="OOw-ui-1uG" secondAttribute="bottom" constant="95" id="rzf-uZ-Ox4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logonButton" destination="OOw-ui-1uG" id="75I-bn-X6f"/>
+                        <outlet property="passwordField" destination="EHV-Fv-GGm" id="V1m-qx-Nka"/>
+                        <outlet property="usernameField" destination="Oc0-hL-AJH" id="sCY-EX-ram"/>
+                        <outlet property="versionLabel" destination="B4z-Dk-ery" id="1xS-eI-HrB"/>
+                        <segue destination="oEI-d3-O8i" kind="presentation" identifier="logonToMain" id="TyC-C9-nBa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LOI-44-iGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.55395683453239" y="110.07194244604317"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="ElZ-sS-zLd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="oEI-d3-O8i" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Lt-8f-kUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="739" y="110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ACI-badge-large" width="585" height="585"/>
+    </resources>
+</document>

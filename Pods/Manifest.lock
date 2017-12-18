@@ -1,0 +1,27 @@
+PODS:
+  - FSCalendar (2.7.9)
+  - RSKImageCropper (1.6.3)
+  - SquarePointOfSaleSDK (3.1)
+
+DEPENDENCIES:
+  - FSCalendar (from `https://github.com/WenchaoD/FSCalendar.git`)
+  - RSKImageCropper
+  - SquarePointOfSaleSDK
+
+EXTERNAL SOURCES:
+  FSCalendar:
+    :git: https://github.com/WenchaoD/FSCalendar.git
+
+CHECKOUT OPTIONS:
+  FSCalendar:
+    :commit: 616ea548e8eb788bb4479a8bdc5b91fb26aaba78
+    :git: https://github.com/WenchaoD/FSCalendar.git
+
+SPEC CHECKSUMS:
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
+  RSKImageCropper: 356e36fc58c57c371b5d8b23d603936d6a73df6c
+  SquarePointOfSaleSDK: b5f4d00022d88e31e20c81efeffa43f553128b9d
+
+PODFILE CHECKSUM: aa10a82ef2c5ef441913ad800c59ebf76b52852b
+
+COCOAPODS: 1.2.0

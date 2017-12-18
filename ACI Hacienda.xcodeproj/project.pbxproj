@@ -1,0 +1,1117 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04B16D105563A862AAE2B7F0 /* Pods_ACI_Hacienda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBF994C4FFCFCD116440C8A /* Pods_ACI_Hacienda.framework */; };
+		C33205321F132CC000695AEE /* StudentDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33205311F132CBF00695AEE /* StudentDetail.storyboard */; };
+		C33205351F132CDF00695AEE /* StudentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33205341F132CDF00695AEE /* StudentDetailViewController.m */; };
+		C33205391F1440AC00695AEE /* CourseRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33205381F1440AC00695AEE /* CourseRootViewController.m */; };
+		C332053B1F1440BF00695AEE /* CourseRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C332053A1F1440BF00695AEE /* CourseRoot.storyboard */; };
+		C332053D1F14410300695AEE /* SubjectRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C332053C1F14410300695AEE /* SubjectRoot.storyboard */; };
+		C33205401F14412400695AEE /* SubjectRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C332053F1F14412400695AEE /* SubjectRootViewController.m */; };
+		C33205431F14416C00695AEE /* SubjectDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33205421F14416C00695AEE /* SubjectDetailViewController.m */; };
+		C33205451F14417E00695AEE /* SubjectDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33205441F14417E00695AEE /* SubjectDetail.storyboard */; };
+		C33205471F14419900695AEE /* CourseDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33205461F14419900695AEE /* CourseDetail.storyboard */; };
+		C332054A1F1441BA00695AEE /* CourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33205491F1441BA00695AEE /* CourseDetailViewController.m */; };
+		C332054E1F14433900695AEE /* CourseRootCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C332054D1F14433900695AEE /* CourseRootCollectionViewCell.m */; };
+		C33205531F14475900695AEE /* SubjectRootCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C33205521F14475900695AEE /* SubjectRootCollectionViewCell.m */; };
+		C33205561F14B52200695AEE /* CourseDetailDPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C33205551F14B52200695AEE /* CourseDetailDPTableViewCell.m */; };
+		C33205581F15601600695AEE /* CYTimePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33205571F15601600695AEE /* CYTimePicker.storyboard */; };
+		C332055B1F15604000695AEE /* CYTimePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C332055A1F15604000695AEE /* CYTimePickerViewController.m */; };
+		C332055E1F15686700695AEE /* WeekItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C332055D1F15686700695AEE /* WeekItemDetail.storyboard */; };
+		C33205611F15687A00695AEE /* WeekItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33205601F15687A00695AEE /* WeekItemDetailViewController.m */; };
+		C33205651F15AFCA00695AEE /* ImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33205641F15AFCA00695AEE /* ImageDetailViewController.m */; };
+		C33205681F15B62100695AEE /* ClassRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33205671F15B62100695AEE /* ClassRoot.storyboard */; };
+		C332056B1F15B63400695AEE /* ClassRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C332056A1F15B63400695AEE /* ClassRootViewController.m */; };
+		C332056D1F15B9FA00695AEE /* ClassDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C332056C1F15B9FA00695AEE /* ClassDetail.storyboard */; };
+		C33205701F15BA0D00695AEE /* ClassDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C332056F1F15BA0D00695AEE /* ClassDetailViewController.m */; };
+		C33205731F1609AB00695AEE /* TeacherRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33205721F1609AB00695AEE /* TeacherRoot.storyboard */; };
+		C33205761F1609C400695AEE /* TeacherRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33205751F1609C400695AEE /* TeacherRootViewController.m */; };
+		C332057A1F16B31D00695AEE /* StudentListDisplay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33205791F16B31D00695AEE /* StudentListDisplay.storyboard */; };
+		C332057F1F16B37C00695AEE /* StudentSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C332057E1F16B37C00695AEE /* StudentSelect.storyboard */; };
+		C33205871F16B4F300695AEE /* StudentListDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33205861F16B4F300695AEE /* StudentListDisplayViewController.m */; };
+		C332058B1F16B65600695AEE /* StudentListActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C332058A1F16B65600695AEE /* StudentListActionViewController.m */; };
+		C3A4FC711F10C9EF005898EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FC701F10C9EF005898EB /* main.m */; };
+		C3A4FC741F10C9EF005898EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FC731F10C9EF005898EB /* AppDelegate.m */; };
+		C3A4FC7A1F10C9EF005898EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4FC781F10C9EF005898EB /* Main.storyboard */; };
+		C3A4FC7D1F10C9EF005898EB /* ACI_Hacienda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FC7B1F10C9EF005898EB /* ACI_Hacienda.xcdatamodeld */; };
+		C3A4FC7F1F10C9EF005898EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A4FC7E1F10C9EF005898EB /* Assets.xcassets */; };
+		C3A4FC821F10C9EF005898EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4FC801F10C9EF005898EB /* LaunchScreen.storyboard */; };
+		C3A4FC951F11714E005898EB /* CYFunctionSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FC921F11714E005898EB /* CYFunctionSet.m */; };
+		C3A4FC961F11714E005898EB /* UIViewController+CYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FC941F11714E005898EB /* UIViewController+CYViewController.m */; };
+		C3A4FC9C1F11715D005898EB /* AppDataSocketConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FC981F11715D005898EB /* AppDataSocketConnector.m */; };
+		C3A4FC9D1F11715D005898EB /* LinkPara.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FC9B1F11715D005898EB /* LinkPara.m */; };
+		C3A4FCA01F118CD7005898EB /* LinkParaDev.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FC9F1F118CD7005898EB /* LinkParaDev.m */; };
+		C3A4FCA21F118E7A005898EB /* Logon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4FCA11F118E7A005898EB /* Logon.storyboard */; };
+		C3A4FCA51F118E94005898EB /* LogonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FCA41F118E94005898EB /* LogonViewController.m */; };
+		C3A4FCA91F11919D005898EB /* CurrentUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FCA81F11919D005898EB /* CurrentUserManager.m */; };
+		C3A4FCAE1F121852005898EB /* StudentRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FCAD1F121852005898EB /* StudentRootViewController.m */; };
+		C3A4FCB01F121876005898EB /* StudentRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4FCAF1F121876005898EB /* StudentRoot.storyboard */; };
+		C3A4FCB31F1218FB005898EB /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4FCB21F1218FB005898EB /* Profile.storyboard */; };
+		C3A4FCB61F121908005898EB /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FCB51F121908005898EB /* ProfileViewController.m */; };
+		C3A4FCBA1F12B793005898EB /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FCB91F12B793005898EB /* MainTabBarController.m */; };
+		C3A4FCBF1F12B95D005898EB /* StaffRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FCBE1F12B95D005898EB /* StaffRootViewController.m */; };
+		C3A4FCC11F12B96D005898EB /* StaffRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4FCC01F12B96D005898EB /* StaffRoot.storyboard */; };
+		C3A4FCC31F12BA10005898EB /* StaffDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A4FCC21F12BA10005898EB /* StaffDetail.storyboard */; };
+		C3A4FCC61F12BA38005898EB /* StaffDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FCC51F12BA38005898EB /* StaffDetailViewController.m */; };
+		C3A4FCC91F12BAF1005898EB /* StudentRootCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FCC81F12BAF1005898EB /* StudentRootCollectionViewCell.m */; };
+		C3A4FCCC1F12BE7D005898EB /* StaffRootCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FCCB1F12BE7D005898EB /* StaffRootCollectionViewCell.m */; };
+		C3A4FCDA1F1308BE005898EB /* DataPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FCD01F1308BE005898EB /* DataPickerViewController.m */; };
+		C3A4FCDB1F1308BE005898EB /* DataPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A4FCD11F1308BE005898EB /* DataPickerViewController.xib */; };
+		C3A4FCDC1F1308BE005898EB /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FCD41F1308BE005898EB /* DatePickerViewController.m */; };
+		C3A4FCDD1F1308BE005898EB /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A4FCD51F1308BE005898EB /* DatePickerViewController.xib */; };
+		C3A4FCDE1F1308BE005898EB /* DateTimeSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A4FCD81F1308BE005898EB /* DateTimeSelectorViewController.m */; };
+		C3A4FCDF1F1308BE005898EB /* DateTimeSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3A4FCD91F1308BE005898EB /* DateTimeSelectorViewController.xib */; };
+		C3A8CBB31F1FC92B00B30E17 /* GradeRecordDisplay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A8CBB21F1FC92B00B30E17 /* GradeRecordDisplay.storyboard */; };
+		C3A8CBB71F1FCBAF00B30E17 /* GradeRecordCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8CBB61F1FCBAF00B30E17 /* GradeRecordCollectionViewCell.m */; };
+		C3A8CBBA1F1FCCE300B30E17 /* CYMultiActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8CBB91F1FCCE300B30E17 /* CYMultiActionViewController.m */; };
+		C3A8CBBC1F1FCCF400B30E17 /* CYMultiAction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A8CBBB1F1FCCF400B30E17 /* CYMultiAction.storyboard */; };
+		C3A8CBC01F1FDA2600B30E17 /* GradeRecordDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8CBBF1F1FDA2600B30E17 /* GradeRecordDisplayViewController.m */; };
+		C3A8CBC21F1FDA4900B30E17 /* GradeRecordDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A8CBC11F1FDA4900B30E17 /* GradeRecordDetail.storyboard */; };
+		C3A8CBC51F1FDA5F00B30E17 /* GradeRecordDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8CBC41F1FDA5F00B30E17 /* GradeRecordDetailViewController.m */; };
+		C3A8CBC71F1FF2D900B30E17 /* GradeSubjectRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A8CBC61F1FF2D900B30E17 /* GradeSubjectRoot.storyboard */; };
+		C3A8CBCA1F1FF33700B30E17 /* GradeSubjectRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8CBC91F1FF33700B30E17 /* GradeSubjectRootViewController.m */; };
+		C3A8CBD11F1FFC8D00B30E17 /* GradeSubjectDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8CBD01F1FFC8D00B30E17 /* GradeSubjectDetailViewController.m */; };
+		C3EB971C1F16EA0D007993FC /* StudentSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB971B1F16EA0D007993FC /* StudentSelectViewController.m */; };
+		C3EB971F1F17020F007993FC /* ImageDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB971E1F17020F007993FC /* ImageDetailView.storyboard */; };
+		C3EB97221F17598B007993FC /* CampusCalendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB97211F17598B007993FC /* CampusCalendar.storyboard */; };
+		C3EB97251F1759B5007993FC /* CampusCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB97241F1759B5007993FC /* CampusCalendarViewController.m */; };
+		C3EB972E1F188AEB007993FC /* OrderFormRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB972D1F188AEB007993FC /* OrderFormRoot.storyboard */; };
+		C3EB97311F188B37007993FC /* OrderFormRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB97301F188B37007993FC /* OrderFormRootViewController.m */; };
+		C3EB97351F188D7D007993FC /* OrderRootCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB97341F188D7D007993FC /* OrderRootCollectionViewCell.m */; };
+		C3EB97381F189040007993FC /* ParentSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB97371F189040007993FC /* ParentSelection.storyboard */; };
+		C3EB973B1F189068007993FC /* ParentSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB973A1F189068007993FC /* ParentSelectionViewController.m */; };
+		C3EB973E1F189087007993FC /* ParentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB973D1F189087007993FC /* ParentDetailViewController.m */; };
+		C3EB97401F189096007993FC /* ParentDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB973F1F189096007993FC /* ParentDetail.storyboard */; };
+		C3EB97431F189140007993FC /* ParentDisplay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB97421F189140007993FC /* ParentDisplay.storyboard */; };
+		C3EB97461F189165007993FC /* ParentDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB97451F189165007993FC /* ParentDisplayViewController.m */; };
+		C3EB97491F1893E5007993FC /* ParentActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB97481F1893E5007993FC /* ParentActionViewController.m */; };
+		C3EB974C1F198BB8007993FC /* OrderProductDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB974B1F198BB8007993FC /* OrderProductDetail.storyboard */; };
+		C3EB974F1F198BD2007993FC /* OrderProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB974E1F198BD2007993FC /* OrderProductDetailViewController.m */; };
+		C3EB97511F198C8F007993FC /* OrderAddonDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB97501F198C8F007993FC /* OrderAddonDetail.storyboard */; };
+		C3EB97541F198CB2007993FC /* OrderAddonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB97531F198CB2007993FC /* OrderAddonDetailViewController.m */; };
+		C3EB97561F198CDD007993FC /* OrderDiscountDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB97551F198CDD007993FC /* OrderDiscountDetail.storyboard */; };
+		C3EB97591F198D15007993FC /* OrderDiscountDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB97581F198D15007993FC /* OrderDiscountDetailViewController.m */; };
+		C3EB975B1F198DA8007993FC /* OrderDiscountRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB975A1F198DA8007993FC /* OrderDiscountRoot.storyboard */; };
+		C3EB975E1F198DC4007993FC /* OrderDiscountRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB975D1F198DC4007993FC /* OrderDiscountRootViewController.m */; };
+		C3EB97601F198F0B007993FC /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB975F1F198F0B007993FC /* OrderDetail.storyboard */; };
+		C3EB97631F198F38007993FC /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB97621F198F38007993FC /* OrderDetailViewController.m */; };
+		C3EB976A1F19DD72007993FC /* OrderDiscountRooCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB97691F19DD72007993FC /* OrderDiscountRooCollectionViewCell.m */; };
+		C3EB976C1F1A9D31007993FC /* OrderAddonRoot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB976B1F1A9D31007993FC /* OrderAddonRoot.storyboard */; };
+		C3EB976F1F1A9D5D007993FC /* OrderAddonRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB976E1F1A9D5D007993FC /* OrderAddonRootViewController.m */; };
+		C3EB97721F1AA613007993FC /* AddonRuleDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB97711F1AA613007993FC /* AddonRuleDetail.storyboard */; };
+		C3EB97751F1AA62C007993FC /* AddonRuleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB97741F1AA62C007993FC /* AddonRuleDetailViewController.m */; };
+		C3EB97771F1AA642007993FC /* DiscountRule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EB97761F1AA642007993FC /* DiscountRule.storyboard */; };
+		C3EB977A1F1AA665007993FC /* DiscountRuleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB97791F1AA665007993FC /* DiscountRuleDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A026E5AD88CA86D728E1508 /* Pods-ACI Hacienda.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACI Hacienda.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACI Hacienda/Pods-ACI Hacienda.debug.xcconfig"; sourceTree = "<group>"; };
+		4DFCF120C733BDDBAE8788DF /* Pods-ACI Hacienda.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACI Hacienda.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACI Hacienda/Pods-ACI Hacienda.release.xcconfig"; sourceTree = "<group>"; };
+		8BBF994C4FFCFCD116440C8A /* Pods_ACI_Hacienda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACI_Hacienda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C33205311F132CBF00695AEE /* StudentDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentDetail.storyboard; sourceTree = "<group>"; };
+		C33205331F132CDF00695AEE /* StudentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentDetailViewController.h; path = Students/StudentDetailViewController.h; sourceTree = "<group>"; };
+		C33205341F132CDF00695AEE /* StudentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentDetailViewController.m; path = Students/StudentDetailViewController.m; sourceTree = "<group>"; };
+		C33205371F1440AC00695AEE /* CourseRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseRootViewController.h; path = Course/CourseRootViewController.h; sourceTree = "<group>"; };
+		C33205381F1440AC00695AEE /* CourseRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseRootViewController.m; path = Course/CourseRootViewController.m; sourceTree = "<group>"; };
+		C332053A1F1440BF00695AEE /* CourseRoot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CourseRoot.storyboard; sourceTree = "<group>"; };
+		C332053C1F14410300695AEE /* SubjectRoot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SubjectRoot.storyboard; sourceTree = "<group>"; };
+		C332053E1F14412400695AEE /* SubjectRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubjectRootViewController.h; path = Course/SubjectRootViewController.h; sourceTree = "<group>"; };
+		C332053F1F14412400695AEE /* SubjectRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubjectRootViewController.m; path = Course/SubjectRootViewController.m; sourceTree = "<group>"; };
+		C33205411F14416C00695AEE /* SubjectDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubjectDetailViewController.h; path = Course/SubjectDetailViewController.h; sourceTree = "<group>"; };
+		C33205421F14416C00695AEE /* SubjectDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubjectDetailViewController.m; path = Course/SubjectDetailViewController.m; sourceTree = "<group>"; };
+		C33205441F14417E00695AEE /* SubjectDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SubjectDetail.storyboard; sourceTree = "<group>"; };
+		C33205461F14419900695AEE /* CourseDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CourseDetail.storyboard; sourceTree = "<group>"; };
+		C33205481F1441BA00695AEE /* CourseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseDetailViewController.h; path = Course/CourseDetailViewController.h; sourceTree = "<group>"; };
+		C33205491F1441BA00695AEE /* CourseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseDetailViewController.m; path = Course/CourseDetailViewController.m; sourceTree = "<group>"; };
+		C332054C1F14433900695AEE /* CourseRootCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseRootCollectionViewCell.h; path = Course/CourseRootCollectionViewCell.h; sourceTree = "<group>"; };
+		C332054D1F14433900695AEE /* CourseRootCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseRootCollectionViewCell.m; path = Course/CourseRootCollectionViewCell.m; sourceTree = "<group>"; };
+		C332054F1F14458F00695AEE /* SubjectRootSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubjectRootSelectionDelegate.h; path = Course/SubjectRootSelectionDelegate.h; sourceTree = "<group>"; };
+		C33205501F1445F900695AEE /* CourseRootSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseRootSelectionDelegate.h; path = Course/CourseRootSelectionDelegate.h; sourceTree = "<group>"; };
+		C33205511F14475900695AEE /* SubjectRootCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubjectRootCollectionViewCell.h; path = Course/SubjectRootCollectionViewCell.h; sourceTree = "<group>"; };
+		C33205521F14475900695AEE /* SubjectRootCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubjectRootCollectionViewCell.m; path = Course/SubjectRootCollectionViewCell.m; sourceTree = "<group>"; };
+		C33205541F14B52200695AEE /* CourseDetailDPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseDetailDPTableViewCell.h; path = Course/CourseDetailDPTableViewCell.h; sourceTree = "<group>"; };
+		C33205551F14B52200695AEE /* CourseDetailDPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CourseDetailDPTableViewCell.m; path = Course/CourseDetailDPTableViewCell.m; sourceTree = "<group>"; };
+		C33205571F15601600695AEE /* CYTimePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CYTimePicker.storyboard; sourceTree = "<group>"; };
+		C33205591F15604000695AEE /* CYTimePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYTimePickerViewController.h; path = DataPicker/CYTimePickerViewController.h; sourceTree = "<group>"; };
+		C332055A1F15604000695AEE /* CYTimePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYTimePickerViewController.m; path = DataPicker/CYTimePickerViewController.m; sourceTree = "<group>"; };
+		C332055C1F1562AE00695AEE /* CYTimePickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYTimePickerDelegate.h; path = DataPicker/CYTimePickerDelegate.h; sourceTree = "<group>"; };
+		C332055D1F15686700695AEE /* WeekItemDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WeekItemDetail.storyboard; sourceTree = "<group>"; };
+		C332055F1F15687A00695AEE /* WeekItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeekItemDetailViewController.h; path = Course/WeekItemDetailViewController.h; sourceTree = "<group>"; };
+		C33205601F15687A00695AEE /* WeekItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeekItemDetailViewController.m; path = Course/WeekItemDetailViewController.m; sourceTree = "<group>"; };
+		C33205621F156A6300695AEE /* WeekItemDetailDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeekItemDetailDelegate.h; path = Course/WeekItemDetailDelegate.h; sourceTree = "<group>"; };
+		C33205631F15AFCA00695AEE /* ImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageDetailViewController.h; path = Staff/ImageDetailViewController.h; sourceTree = "<group>"; };
+		C33205641F15AFCA00695AEE /* ImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageDetailViewController.m; path = Staff/ImageDetailViewController.m; sourceTree = "<group>"; };
+		C33205671F15B62100695AEE /* ClassRoot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassRoot.storyboard; sourceTree = "<group>"; };
+		C33205691F15B63400695AEE /* ClassRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassRootViewController.h; path = Class/ClassRootViewController.h; sourceTree = "<group>"; };
+		C332056A1F15B63400695AEE /* ClassRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassRootViewController.m; path = Class/ClassRootViewController.m; sourceTree = "<group>"; };
+		C332056C1F15B9FA00695AEE /* ClassDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClassDetail.storyboard; sourceTree = "<group>"; };
+		C332056E1F15BA0D00695AEE /* ClassDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassDetailViewController.h; path = Class/ClassDetailViewController.h; sourceTree = "<group>"; };
+		C332056F1F15BA0D00695AEE /* ClassDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassDetailViewController.m; path = Class/ClassDetailViewController.m; sourceTree = "<group>"; };
+		C33205721F1609AB00695AEE /* TeacherRoot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TeacherRoot.storyboard; sourceTree = "<group>"; };
+		C33205741F1609C400695AEE /* TeacherRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherRootViewController.h; path = Teacher/TeacherRootViewController.h; sourceTree = "<group>"; };
+		C33205751F1609C400695AEE /* TeacherRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeacherRootViewController.m; path = Teacher/TeacherRootViewController.m; sourceTree = "<group>"; };
+		C33205771F160A6100695AEE /* TeacherSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeacherSelectionDelegate.h; path = Teacher/TeacherSelectionDelegate.h; sourceTree = "<group>"; };
+		C33205791F16B31D00695AEE /* StudentListDisplay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentListDisplay.storyboard; sourceTree = "<group>"; };
+		C332057E1F16B37C00695AEE /* StudentSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentSelect.storyboard; sourceTree = "<group>"; };
+		C33205851F16B4F300695AEE /* StudentListDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentListDisplayViewController.h; path = Students/StudentListDisplayViewController.h; sourceTree = "<group>"; };
+		C33205861F16B4F300695AEE /* StudentListDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentListDisplayViewController.m; path = Students/StudentListDisplayViewController.m; sourceTree = "<group>"; };
+		C33205891F16B65600695AEE /* StudentListActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentListActionViewController.h; path = Students/StudentListActionViewController.h; sourceTree = "<group>"; };
+		C332058A1F16B65600695AEE /* StudentListActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentListActionViewController.m; path = Students/StudentListActionViewController.m; sourceTree = "<group>"; };
+		C332058C1F16CF6500695AEE /* StudentListActionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentListActionDelegate.h; path = Students/StudentListActionDelegate.h; sourceTree = "<group>"; };
+		C3A4FC6C1F10C9EF005898EB /* ACI Hacienda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACI Hacienda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A4FC701F10C9EF005898EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3A4FC721F10C9EF005898EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3A4FC731F10C9EF005898EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3A4FC791F10C9EF005898EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3A4FC7C1F10C9EF005898EB /* ACI_Hacienda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ACI_Hacienda.xcdatamodel; sourceTree = "<group>"; };
+		C3A4FC7E1F10C9EF005898EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3A4FC811F10C9EF005898EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3A4FC831F10C9EF005898EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3A4FC911F11714E005898EB /* CYFunctionSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYFunctionSet.h; path = Functions/CYFunctionSet.h; sourceTree = "<group>"; };
+		C3A4FC921F11714E005898EB /* CYFunctionSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYFunctionSet.m; path = Functions/CYFunctionSet.m; sourceTree = "<group>"; };
+		C3A4FC931F11714E005898EB /* UIViewController+CYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+CYViewController.h"; path = "Functions/UIViewController+CYViewController.h"; sourceTree = "<group>"; };
+		C3A4FC941F11714E005898EB /* UIViewController+CYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+CYViewController.m"; path = "Functions/UIViewController+CYViewController.m"; sourceTree = "<group>"; };
+		C3A4FC971F11715D005898EB /* AppDataSocketConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDataSocketConnector.h; path = ServiceLink/AppDataSocketConnector.h; sourceTree = "<group>"; };
+		C3A4FC981F11715D005898EB /* AppDataSocketConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDataSocketConnector.m; path = ServiceLink/AppDataSocketConnector.m; sourceTree = "<group>"; };
+		C3A4FC991F11715D005898EB /* AppDataSocketDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDataSocketDelegate.h; path = ServiceLink/AppDataSocketDelegate.h; sourceTree = "<group>"; };
+		C3A4FC9A1F11715D005898EB /* LinkPara.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinkPara.h; path = ServiceLink/LinkPara.h; sourceTree = "<group>"; };
+		C3A4FC9B1F11715D005898EB /* LinkPara.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinkPara.m; path = ServiceLink/LinkPara.m; sourceTree = "<group>"; };
+		C3A4FC9E1F118CD7005898EB /* LinkParaDev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinkParaDev.h; path = ServiceLink/LinkParaDev.h; sourceTree = "<group>"; };
+		C3A4FC9F1F118CD7005898EB /* LinkParaDev.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LinkParaDev.m; path = ServiceLink/LinkParaDev.m; sourceTree = "<group>"; };
+		C3A4FCA11F118E7A005898EB /* Logon.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Logon.storyboard; sourceTree = "<group>"; };
+		C3A4FCA31F118E94005898EB /* LogonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogonViewController.h; path = Logon/LogonViewController.h; sourceTree = "<group>"; };
+		C3A4FCA41F118E94005898EB /* LogonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogonViewController.m; path = Logon/LogonViewController.m; sourceTree = "<group>"; };
+		C3A4FCA71F11919D005898EB /* CurrentUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentUserManager.h; path = UserManagement/CurrentUserManager.h; sourceTree = "<group>"; };
+		C3A4FCA81F11919D005898EB /* CurrentUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrentUserManager.m; path = UserManagement/CurrentUserManager.m; sourceTree = "<group>"; };
+		C3A4FCAA1F1191B1005898EB /* CurrentUserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrentUserDelegate.h; path = UserManagement/CurrentUserDelegate.h; sourceTree = "<group>"; };
+		C3A4FCAC1F121852005898EB /* StudentRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentRootViewController.h; path = Students/StudentRootViewController.h; sourceTree = "<group>"; };
+		C3A4FCAD1F121852005898EB /* StudentRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentRootViewController.m; path = Students/StudentRootViewController.m; sourceTree = "<group>"; };
+		C3A4FCAF1F121876005898EB /* StudentRoot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StudentRoot.storyboard; sourceTree = "<group>"; };
+		C3A4FCB21F1218FB005898EB /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		C3A4FCB41F121908005898EB /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = Profile/ProfileViewController.h; sourceTree = "<group>"; };
+		C3A4FCB51F121908005898EB /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = Profile/ProfileViewController.m; sourceTree = "<group>"; };
+		C3A4FCB81F12B793005898EB /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTabBarController.h; path = Main/MainTabBarController.h; sourceTree = "<group>"; };
+		C3A4FCB91F12B793005898EB /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTabBarController.m; path = Main/MainTabBarController.m; sourceTree = "<group>"; };
+		C3A4FCBB1F12B7DE005898EB /* MainTabBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTabBarDelegate.h; path = Main/MainTabBarDelegate.h; sourceTree = "<group>"; };
+		C3A4FCBD1F12B95D005898EB /* StaffRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaffRootViewController.h; path = Staff/StaffRootViewController.h; sourceTree = "<group>"; };
+		C3A4FCBE1F12B95D005898EB /* StaffRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaffRootViewController.m; path = Staff/StaffRootViewController.m; sourceTree = "<group>"; };
+		C3A4FCC01F12B96D005898EB /* StaffRoot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StaffRoot.storyboard; sourceTree = "<group>"; };
+		C3A4FCC21F12BA10005898EB /* StaffDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StaffDetail.storyboard; sourceTree = "<group>"; };
+		C3A4FCC41F12BA38005898EB /* StaffDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaffDetailViewController.h; path = Staff/StaffDetailViewController.h; sourceTree = "<group>"; };
+		C3A4FCC51F12BA38005898EB /* StaffDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaffDetailViewController.m; path = Staff/StaffDetailViewController.m; sourceTree = "<group>"; };
+		C3A4FCC71F12BAF1005898EB /* StudentRootCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentRootCollectionViewCell.h; path = Students/StudentRootCollectionViewCell.h; sourceTree = "<group>"; };
+		C3A4FCC81F12BAF1005898EB /* StudentRootCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentRootCollectionViewCell.m; path = Students/StudentRootCollectionViewCell.m; sourceTree = "<group>"; };
+		C3A4FCCA1F12BE7D005898EB /* StaffRootCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaffRootCollectionViewCell.h; path = Staff/StaffRootCollectionViewCell.h; sourceTree = "<group>"; };
+		C3A4FCCB1F12BE7D005898EB /* StaffRootCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaffRootCollectionViewCell.m; path = Staff/StaffRootCollectionViewCell.m; sourceTree = "<group>"; };
+		C3A4FCCE1F1308BE005898EB /* DataPickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataPickerDelegate.h; path = DataPicker/DataPickerDelegate.h; sourceTree = "<group>"; };
+		C3A4FCCF1F1308BE005898EB /* DataPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataPickerViewController.h; path = DataPicker/DataPickerViewController.h; sourceTree = "<group>"; };
+		C3A4FCD01F1308BE005898EB /* DataPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataPickerViewController.m; path = DataPicker/DataPickerViewController.m; sourceTree = "<group>"; };
+		C3A4FCD11F1308BE005898EB /* DataPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DataPickerViewController.xib; path = DataPicker/DataPickerViewController.xib; sourceTree = "<group>"; };
+		C3A4FCD21F1308BE005898EB /* DatePickerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatePickerDelegate.h; path = DataPicker/DatePickerDelegate.h; sourceTree = "<group>"; };
+		C3A4FCD31F1308BE005898EB /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatePickerViewController.h; path = DataPicker/DatePickerViewController.h; sourceTree = "<group>"; };
+		C3A4FCD41F1308BE005898EB /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatePickerViewController.m; path = DataPicker/DatePickerViewController.m; sourceTree = "<group>"; };
+		C3A4FCD51F1308BE005898EB /* DatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DatePickerViewController.xib; path = DataPicker/DatePickerViewController.xib; sourceTree = "<group>"; };
+		C3A4FCD61F1308BE005898EB /* DateTimeSelectorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateTimeSelectorDelegate.h; path = DataPicker/DateTimeSelectorDelegate.h; sourceTree = "<group>"; };
+		C3A4FCD71F1308BE005898EB /* DateTimeSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateTimeSelectorViewController.h; path = DataPicker/DateTimeSelectorViewController.h; sourceTree = "<group>"; };
+		C3A4FCD81F1308BE005898EB /* DateTimeSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateTimeSelectorViewController.m; path = DataPicker/DateTimeSelectorViewController.m; sourceTree = "<group>"; };
+		C3A4FCD91F1308BE005898EB /* DateTimeSelectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DateTimeSelectorViewController.xib; path = DataPicker/DateTimeSelectorViewController.xib; sourceTree = "<group>"; };
+		C3A8CBB21F1FC92B00B30E17 /* GradeRecordDisplay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GradeRecordDisplay.storyboard; sourceTree = "<group>"; };
+		C3A8CBB51F1FCBAF00B30E17 /* GradeRecordCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradeRecordCollectionViewCell.h; path = AcademicRecord/GradeRecordCollectionViewCell.h; sourceTree = "<group>"; };
+		C3A8CBB61F1FCBAF00B30E17 /* GradeRecordCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradeRecordCollectionViewCell.m; path = AcademicRecord/GradeRecordCollectionViewCell.m; sourceTree = "<group>"; };
+		C3A8CBB81F1FCCE300B30E17 /* CYMultiActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYMultiActionViewController.h; path = DataPicker/CYMultiActionViewController.h; sourceTree = "<group>"; };
+		C3A8CBB91F1FCCE300B30E17 /* CYMultiActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CYMultiActionViewController.m; path = DataPicker/CYMultiActionViewController.m; sourceTree = "<group>"; };
+		C3A8CBBB1F1FCCF400B30E17 /* CYMultiAction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CYMultiAction.storyboard; sourceTree = "<group>"; };
+		C3A8CBBD1F1FD8A800B30E17 /* CYMultiActionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYMultiActionDelegate.h; path = DataPicker/CYMultiActionDelegate.h; sourceTree = "<group>"; };
+		C3A8CBBE1F1FDA2600B30E17 /* GradeRecordDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradeRecordDisplayViewController.h; path = AcademicRecord/GradeRecordDisplayViewController.h; sourceTree = "<group>"; };
+		C3A8CBBF1F1FDA2600B30E17 /* GradeRecordDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradeRecordDisplayViewController.m; path = AcademicRecord/GradeRecordDisplayViewController.m; sourceTree = "<group>"; };
+		C3A8CBC11F1FDA4900B30E17 /* GradeRecordDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GradeRecordDetail.storyboard; sourceTree = "<group>"; };
+		C3A8CBC31F1FDA5F00B30E17 /* GradeRecordDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradeRecordDetailViewController.h; path = AcademicRecord/GradeRecordDetailViewController.h; sourceTree = "<group>"; };
+		C3A8CBC41F1FDA5F00B30E17 /* GradeRecordDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradeRecordDetailViewController.m; path = AcademicRecord/GradeRecordDetailViewController.m; sourceTree = "<group>"; };
+		C3A8CBC61F1FF2D900B30E17 /* GradeSubjectRoot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GradeSubjectRoot.storyboard; sourceTree = "<group>"; };
+		C3A8CBC81F1FF33700B30E17 /* GradeSubjectRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradeSubjectRootViewController.h; path = AcademicRecord/GradeSubjectRootViewController.h; sourceTree = "<group>"; };
+		C3A8CBC91F1FF33700B30E17 /* GradeSubjectRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradeSubjectRootViewController.m; path = AcademicRecord/GradeSubjectRootViewController.m; sourceTree = "<group>"; };
+		C3A8CBCB1F1FF9F600B30E17 /* GradeSubjectSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradeSubjectSelectionDelegate.h; path = AcademicRecord/GradeSubjectSelectionDelegate.h; sourceTree = "<group>"; };
+		C3A8CBCF1F1FFC8D00B30E17 /* GradeSubjectDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GradeSubjectDetailViewController.h; path = AcademicRecord/GradeSubjectDetailViewController.h; sourceTree = "<group>"; };
+		C3A8CBD01F1FFC8D00B30E17 /* GradeSubjectDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GradeSubjectDetailViewController.m; path = AcademicRecord/GradeSubjectDetailViewController.m; sourceTree = "<group>"; };
+		C3EB971A1F16EA0D007993FC /* StudentSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentSelectViewController.h; path = Students/StudentSelectViewController.h; sourceTree = "<group>"; };
+		C3EB971B1F16EA0D007993FC /* StudentSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentSelectViewController.m; path = Students/StudentSelectViewController.m; sourceTree = "<group>"; };
+		C3EB971D1F16EA33007993FC /* StudentSelectDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentSelectDelegate.h; path = Students/StudentSelectDelegate.h; sourceTree = "<group>"; };
+		C3EB971E1F17020F007993FC /* ImageDetailView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageDetailView.storyboard; sourceTree = "<group>"; };
+		C3EB97211F17598B007993FC /* CampusCalendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CampusCalendar.storyboard; sourceTree = "<group>"; };
+		C3EB97231F1759B5007993FC /* CampusCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CampusCalendarViewController.h; path = CampusCalendar/CampusCalendarViewController.h; sourceTree = "<group>"; };
+		C3EB97241F1759B5007993FC /* CampusCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CampusCalendarViewController.m; path = CampusCalendar/CampusCalendarViewController.m; sourceTree = "<group>"; };
+		C3EB97261F175C17007993FC /* ACI Hacienda-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ACI Hacienda-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3EB972D1F188AEB007993FC /* OrderFormRoot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderFormRoot.storyboard; sourceTree = "<group>"; };
+		C3EB972F1F188B37007993FC /* OrderFormRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderFormRootViewController.h; path = Registration/OrderFormRootViewController.h; sourceTree = "<group>"; };
+		C3EB97301F188B37007993FC /* OrderFormRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderFormRootViewController.m; path = Registration/OrderFormRootViewController.m; sourceTree = "<group>"; };
+		C3EB97331F188D7D007993FC /* OrderRootCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderRootCollectionViewCell.h; path = Registration/OrderRootCollectionViewCell.h; sourceTree = "<group>"; };
+		C3EB97341F188D7D007993FC /* OrderRootCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderRootCollectionViewCell.m; path = Registration/OrderRootCollectionViewCell.m; sourceTree = "<group>"; };
+		C3EB97371F189040007993FC /* ParentSelection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ParentSelection.storyboard; sourceTree = "<group>"; };
+		C3EB97391F189068007993FC /* ParentSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParentSelectionViewController.h; path = Parents/ParentSelectionViewController.h; sourceTree = "<group>"; };
+		C3EB973A1F189068007993FC /* ParentSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParentSelectionViewController.m; path = Parents/ParentSelectionViewController.m; sourceTree = "<group>"; };
+		C3EB973C1F189087007993FC /* ParentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParentDetailViewController.h; path = Parents/ParentDetailViewController.h; sourceTree = "<group>"; };
+		C3EB973D1F189087007993FC /* ParentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParentDetailViewController.m; path = Parents/ParentDetailViewController.m; sourceTree = "<group>"; };
+		C3EB973F1F189096007993FC /* ParentDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ParentDetail.storyboard; sourceTree = "<group>"; };
+		C3EB97411F1890DE007993FC /* ParentSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParentSelectionDelegate.h; path = Parents/ParentSelectionDelegate.h; sourceTree = "<group>"; };
+		C3EB97421F189140007993FC /* ParentDisplay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ParentDisplay.storyboard; sourceTree = "<group>"; };
+		C3EB97441F189165007993FC /* ParentDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParentDisplayViewController.h; path = Parents/ParentDisplayViewController.h; sourceTree = "<group>"; };
+		C3EB97451F189165007993FC /* ParentDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParentDisplayViewController.m; path = Parents/ParentDisplayViewController.m; sourceTree = "<group>"; };
+		C3EB97471F1893E5007993FC /* ParentActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParentActionViewController.h; path = Parents/ParentActionViewController.h; sourceTree = "<group>"; };
+		C3EB97481F1893E5007993FC /* ParentActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParentActionViewController.m; path = Parents/ParentActionViewController.m; sourceTree = "<group>"; };
+		C3EB974A1F189572007993FC /* ParentActionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParentActionDelegate.h; path = Parents/ParentActionDelegate.h; sourceTree = "<group>"; };
+		C3EB974B1F198BB8007993FC /* OrderProductDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderProductDetail.storyboard; sourceTree = "<group>"; };
+		C3EB974D1F198BD2007993FC /* OrderProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderProductDetailViewController.h; path = Registration/OrderProductDetailViewController.h; sourceTree = "<group>"; };
+		C3EB974E1F198BD2007993FC /* OrderProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderProductDetailViewController.m; path = Registration/OrderProductDetailViewController.m; sourceTree = "<group>"; };
+		C3EB97501F198C8F007993FC /* OrderAddonDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderAddonDetail.storyboard; sourceTree = "<group>"; };
+		C3EB97521F198CB2007993FC /* OrderAddonDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderAddonDetailViewController.h; path = Registration/OrderAddonDetailViewController.h; sourceTree = "<group>"; };
+		C3EB97531F198CB2007993FC /* OrderAddonDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderAddonDetailViewController.m; path = Registration/OrderAddonDetailViewController.m; sourceTree = "<group>"; };
+		C3EB97551F198CDD007993FC /* OrderDiscountDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderDiscountDetail.storyboard; sourceTree = "<group>"; };
+		C3EB97571F198D15007993FC /* OrderDiscountDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderDiscountDetailViewController.h; path = Registration/OrderDiscountDetailViewController.h; sourceTree = "<group>"; };
+		C3EB97581F198D15007993FC /* OrderDiscountDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderDiscountDetailViewController.m; path = Registration/OrderDiscountDetailViewController.m; sourceTree = "<group>"; };
+		C3EB975A1F198DA8007993FC /* OrderDiscountRoot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderDiscountRoot.storyboard; sourceTree = "<group>"; };
+		C3EB975C1F198DC4007993FC /* OrderDiscountRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderDiscountRootViewController.h; path = Registration/OrderDiscountRootViewController.h; sourceTree = "<group>"; };
+		C3EB975D1F198DC4007993FC /* OrderDiscountRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderDiscountRootViewController.m; path = Registration/OrderDiscountRootViewController.m; sourceTree = "<group>"; };
+		C3EB975F1F198F0B007993FC /* OrderDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderDetail.storyboard; sourceTree = "<group>"; };
+		C3EB97611F198F38007993FC /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderDetailViewController.h; path = Registration/OrderDetailViewController.h; sourceTree = "<group>"; };
+		C3EB97621F198F38007993FC /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderDetailViewController.m; path = Registration/OrderDetailViewController.m; sourceTree = "<group>"; };
+		C3EB97641F199164007993FC /* OrderProductDetailDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderProductDetailDelegate.h; path = Registration/OrderProductDetailDelegate.h; sourceTree = "<group>"; };
+		C3EB97651F199323007993FC /* OrderAddonDetailDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderAddonDetailDelegate.h; path = Registration/OrderAddonDetailDelegate.h; sourceTree = "<group>"; };
+		C3EB97681F19DD72007993FC /* OrderDiscountRooCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderDiscountRooCollectionViewCell.h; path = Registration/OrderDiscountRooCollectionViewCell.h; sourceTree = "<group>"; };
+		C3EB97691F19DD72007993FC /* OrderDiscountRooCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderDiscountRooCollectionViewCell.m; path = Registration/OrderDiscountRooCollectionViewCell.m; sourceTree = "<group>"; };
+		C3EB976B1F1A9D31007993FC /* OrderAddonRoot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderAddonRoot.storyboard; sourceTree = "<group>"; };
+		C3EB976D1F1A9D5D007993FC /* OrderAddonRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderAddonRootViewController.h; path = Registration/OrderAddonRootViewController.h; sourceTree = "<group>"; };
+		C3EB976E1F1A9D5D007993FC /* OrderAddonRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderAddonRootViewController.m; path = Registration/OrderAddonRootViewController.m; sourceTree = "<group>"; };
+		C3EB97711F1AA613007993FC /* AddonRuleDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddonRuleDetail.storyboard; sourceTree = "<group>"; };
+		C3EB97731F1AA62C007993FC /* AddonRuleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddonRuleDetailViewController.h; path = Registration/AddonRuleDetailViewController.h; sourceTree = "<group>"; };
+		C3EB97741F1AA62C007993FC /* AddonRuleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddonRuleDetailViewController.m; path = Registration/AddonRuleDetailViewController.m; sourceTree = "<group>"; };
+		C3EB97761F1AA642007993FC /* DiscountRule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DiscountRule.storyboard; sourceTree = "<group>"; };
+		C3EB97781F1AA665007993FC /* DiscountRuleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscountRuleDetailViewController.h; path = Registration/DiscountRuleDetailViewController.h; sourceTree = "<group>"; };
+		C3EB97791F1AA665007993FC /* DiscountRuleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscountRuleDetailViewController.m; path = Registration/DiscountRuleDetailViewController.m; sourceTree = "<group>"; };
+		C3EB977B1F1B6189007993FC /* OrderDiscountDetailDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderDiscountDetailDelegate.h; path = Registration/OrderDiscountDetailDelegate.h; sourceTree = "<group>"; };
+		C3EB977C1F1C836E007993FC /* OrderDiscountRootDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderDiscountRootDelegate.h; path = Registration/OrderDiscountRootDelegate.h; sourceTree = "<group>"; };
+		C3EB977D1F1C8620007993FC /* OrderAddonRootDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderAddonRootDelegate.h; path = Registration/OrderAddonRootDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3A4FC691F10C9EF005898EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B16D105563A862AAE2B7F0 /* Pods_ACI_Hacienda.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6537BBF010D1D8D75A92F937 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A026E5AD88CA86D728E1508 /* Pods-ACI Hacienda.debug.xcconfig */,
+				4DFCF120C733BDDBAE8788DF /* Pods-ACI Hacienda.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C33205361F14162200695AEE /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				C332054B1F14431D00695AEE /* Elements */,
+				C332053A1F1440BF00695AEE /* CourseRoot.storyboard */,
+				C33205371F1440AC00695AEE /* CourseRootViewController.h */,
+				C33205381F1440AC00695AEE /* CourseRootViewController.m */,
+				C33205501F1445F900695AEE /* CourseRootSelectionDelegate.h */,
+				C33205461F14419900695AEE /* CourseDetail.storyboard */,
+				C33205481F1441BA00695AEE /* CourseDetailViewController.h */,
+				C33205491F1441BA00695AEE /* CourseDetailViewController.m */,
+				C332055D1F15686700695AEE /* WeekItemDetail.storyboard */,
+				C33205621F156A6300695AEE /* WeekItemDetailDelegate.h */,
+				C332055F1F15687A00695AEE /* WeekItemDetailViewController.h */,
+				C33205601F15687A00695AEE /* WeekItemDetailViewController.m */,
+				C332053C1F14410300695AEE /* SubjectRoot.storyboard */,
+				C332053E1F14412400695AEE /* SubjectRootViewController.h */,
+				C332053F1F14412400695AEE /* SubjectRootViewController.m */,
+				C332054F1F14458F00695AEE /* SubjectRootSelectionDelegate.h */,
+				C33205441F14417E00695AEE /* SubjectDetail.storyboard */,
+				C33205411F14416C00695AEE /* SubjectDetailViewController.h */,
+				C33205421F14416C00695AEE /* SubjectDetailViewController.m */,
+			);
+			name = Course;
+			sourceTree = "<group>";
+		};
+		C332054B1F14431D00695AEE /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				C332054C1F14433900695AEE /* CourseRootCollectionViewCell.h */,
+				C332054D1F14433900695AEE /* CourseRootCollectionViewCell.m */,
+				C33205511F14475900695AEE /* SubjectRootCollectionViewCell.h */,
+				C33205521F14475900695AEE /* SubjectRootCollectionViewCell.m */,
+				C33205541F14B52200695AEE /* CourseDetailDPTableViewCell.h */,
+				C33205551F14B52200695AEE /* CourseDetailDPTableViewCell.m */,
+			);
+			name = Elements;
+			sourceTree = "<group>";
+		};
+		C33205661F15B5DF00695AEE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				C33205671F15B62100695AEE /* ClassRoot.storyboard */,
+				C33205691F15B63400695AEE /* ClassRootViewController.h */,
+				C332056A1F15B63400695AEE /* ClassRootViewController.m */,
+				C332056C1F15B9FA00695AEE /* ClassDetail.storyboard */,
+				C332056E1F15BA0D00695AEE /* ClassDetailViewController.h */,
+				C332056F1F15BA0D00695AEE /* ClassDetailViewController.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		C33205711F16098F00695AEE /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				C33205721F1609AB00695AEE /* TeacherRoot.storyboard */,
+				C33205771F160A6100695AEE /* TeacherSelectionDelegate.h */,
+				C33205741F1609C400695AEE /* TeacherRootViewController.h */,
+				C33205751F1609C400695AEE /* TeacherRootViewController.m */,
+			);
+			name = Teacher;
+			sourceTree = "<group>";
+		};
+		C33205881F16B50000695AEE /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4FCC71F12BAF1005898EB /* StudentRootCollectionViewCell.h */,
+				C3A4FCC81F12BAF1005898EB /* StudentRootCollectionViewCell.m */,
+			);
+			name = Elements;
+			sourceTree = "<group>";
+		};
+		C39262E44F4343F7998DDE2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BBF994C4FFCFCD116440C8A /* Pods_ACI_Hacienda.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3A4FC631F10C9EF005898EB = {
+			isa = PBXGroup;
+			children = (
+				C3EB97661F19955F007993FC /* AcademicRecord */,
+				C3EB972C1F188AC7007993FC /* Registration */,
+				C3EB97361F18901B007993FC /* Parents */,
+				C3EB97201F175970007993FC /* CampusCalendar */,
+				C33205711F16098F00695AEE /* Teacher */,
+				C33205661F15B5DF00695AEE /* Class */,
+				C33205361F14162200695AEE /* Course */,
+				C3A4FCCD1F130881005898EB /* DataPicker */,
+				C3A4FCBC1F12B935005898EB /* Staff */,
+				C3A4FCB71F12B754005898EB /* Main */,
+				C3A4FCB11F1218A0005898EB /* Profile */,
+				C3A4FCAB1F12182D005898EB /* Students */,
+				C3A4FCA61F1190D2005898EB /* UserManagerment */,
+				C3A4FC901F1170D1005898EB /* ServiceLink */,
+				C3A4FC8F1F1170C5005898EB /* Functions */,
+				C3A4FC891F117086005898EB /* Logon */,
+				C3A4FC6E1F10C9EF005898EB /* ACI Hacienda */,
+				C3A4FC6D1F10C9EF005898EB /* Products */,
+				6537BBF010D1D8D75A92F937 /* Pods */,
+				C39262E44F4343F7998DDE2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C3A4FC6D1F10C9EF005898EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4FC6C1F10C9EF005898EB /* ACI Hacienda.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3A4FC6E1F10C9EF005898EB /* ACI Hacienda */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4FC721F10C9EF005898EB /* AppDelegate.h */,
+				C3A4FC731F10C9EF005898EB /* AppDelegate.m */,
+				C3A4FC7E1F10C9EF005898EB /* Assets.xcassets */,
+				C3A4FC801F10C9EF005898EB /* LaunchScreen.storyboard */,
+				C3A4FC831F10C9EF005898EB /* Info.plist */,
+				C3A4FC7B1F10C9EF005898EB /* ACI_Hacienda.xcdatamodeld */,
+				C3A4FC6F1F10C9EF005898EB /* Supporting Files */,
+			);
+			path = "ACI Hacienda";
+			sourceTree = "<group>";
+		};
+		C3A4FC6F1F10C9EF005898EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4FC701F10C9EF005898EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3A4FC891F117086005898EB /* Logon */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4FCA11F118E7A005898EB /* Logon.storyboard */,
+				C3A4FCA31F118E94005898EB /* LogonViewController.h */,
+				C3A4FCA41F118E94005898EB /* LogonViewController.m */,
+			);
+			name = Logon;
+			sourceTree = "<group>";
+		};
+		C3A4FC8F1F1170C5005898EB /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4FC911F11714E005898EB /* CYFunctionSet.h */,
+				C3A4FC921F11714E005898EB /* CYFunctionSet.m */,
+				C3A4FC931F11714E005898EB /* UIViewController+CYViewController.h */,
+				C3A4FC941F11714E005898EB /* UIViewController+CYViewController.m */,
+			);
+			name = Functions;
+			sourceTree = "<group>";
+		};
+		C3A4FC901F1170D1005898EB /* ServiceLink */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4FC971F11715D005898EB /* AppDataSocketConnector.h */,
+				C3A4FC981F11715D005898EB /* AppDataSocketConnector.m */,
+				C3A4FC991F11715D005898EB /* AppDataSocketDelegate.h */,
+				C3A4FC9A1F11715D005898EB /* LinkPara.h */,
+				C3A4FC9B1F11715D005898EB /* LinkPara.m */,
+				C3A4FC9E1F118CD7005898EB /* LinkParaDev.h */,
+				C3A4FC9F1F118CD7005898EB /* LinkParaDev.m */,
+			);
+			name = ServiceLink;
+			sourceTree = "<group>";
+		};
+		C3A4FCA61F1190D2005898EB /* UserManagerment */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4FCA71F11919D005898EB /* CurrentUserManager.h */,
+				C3A4FCA81F11919D005898EB /* CurrentUserManager.m */,
+				C3A4FCAA1F1191B1005898EB /* CurrentUserDelegate.h */,
+			);
+			name = UserManagerment;
+			sourceTree = "<group>";
+		};
+		C3A4FCAB1F12182D005898EB /* Students */ = {
+			isa = PBXGroup;
+			children = (
+				C33205881F16B50000695AEE /* Elements */,
+				C3A4FCAC1F121852005898EB /* StudentRootViewController.h */,
+				C3A4FCAD1F121852005898EB /* StudentRootViewController.m */,
+				C33205331F132CDF00695AEE /* StudentDetailViewController.h */,
+				C33205341F132CDF00695AEE /* StudentDetailViewController.m */,
+				C33205311F132CBF00695AEE /* StudentDetail.storyboard */,
+				C3A4FCAF1F121876005898EB /* StudentRoot.storyboard */,
+				C33205791F16B31D00695AEE /* StudentListDisplay.storyboard */,
+				C332058C1F16CF6500695AEE /* StudentListActionDelegate.h */,
+				C33205891F16B65600695AEE /* StudentListActionViewController.h */,
+				C332058A1F16B65600695AEE /* StudentListActionViewController.m */,
+				C33205851F16B4F300695AEE /* StudentListDisplayViewController.h */,
+				C33205861F16B4F300695AEE /* StudentListDisplayViewController.m */,
+				C332057E1F16B37C00695AEE /* StudentSelect.storyboard */,
+				C3EB971A1F16EA0D007993FC /* StudentSelectViewController.h */,
+				C3EB971B1F16EA0D007993FC /* StudentSelectViewController.m */,
+				C3EB971D1F16EA33007993FC /* StudentSelectDelegate.h */,
+			);
+			name = Students;
+			sourceTree = "<group>";
+		};
+		C3A4FCB11F1218A0005898EB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4FCB41F121908005898EB /* ProfileViewController.h */,
+				C3A4FCB51F121908005898EB /* ProfileViewController.m */,
+				C3A4FCB21F1218FB005898EB /* Profile.storyboard */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		C3A4FCB71F12B754005898EB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4FCB81F12B793005898EB /* MainTabBarController.h */,
+				C3A4FCB91F12B793005898EB /* MainTabBarController.m */,
+				C3A4FC781F10C9EF005898EB /* Main.storyboard */,
+				C3A4FCBB1F12B7DE005898EB /* MainTabBarDelegate.h */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		C3A4FCBC1F12B935005898EB /* Staff */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4FCBD1F12B95D005898EB /* StaffRootViewController.h */,
+				C3A4FCBE1F12B95D005898EB /* StaffRootViewController.m */,
+				C3A4FCC01F12B96D005898EB /* StaffRoot.storyboard */,
+				C3A4FCC21F12BA10005898EB /* StaffDetail.storyboard */,
+				C3A4FCC41F12BA38005898EB /* StaffDetailViewController.h */,
+				C3A4FCC51F12BA38005898EB /* StaffDetailViewController.m */,
+				C3A4FCCA1F12BE7D005898EB /* StaffRootCollectionViewCell.h */,
+				C3A4FCCB1F12BE7D005898EB /* StaffRootCollectionViewCell.m */,
+			);
+			name = Staff;
+			sourceTree = "<group>";
+		};
+		C3A4FCCD1F130881005898EB /* DataPicker */ = {
+			isa = PBXGroup;
+			children = (
+				C3A4FCCE1F1308BE005898EB /* DataPickerDelegate.h */,
+				C3A4FCCF1F1308BE005898EB /* DataPickerViewController.h */,
+				C3A4FCD01F1308BE005898EB /* DataPickerViewController.m */,
+				C3A4FCD11F1308BE005898EB /* DataPickerViewController.xib */,
+				C3A4FCD21F1308BE005898EB /* DatePickerDelegate.h */,
+				C3A4FCD31F1308BE005898EB /* DatePickerViewController.h */,
+				C3A4FCD41F1308BE005898EB /* DatePickerViewController.m */,
+				C3A4FCD51F1308BE005898EB /* DatePickerViewController.xib */,
+				C3A4FCD61F1308BE005898EB /* DateTimeSelectorDelegate.h */,
+				C3A4FCD71F1308BE005898EB /* DateTimeSelectorViewController.h */,
+				C3A4FCD81F1308BE005898EB /* DateTimeSelectorViewController.m */,
+				C3A4FCD91F1308BE005898EB /* DateTimeSelectorViewController.xib */,
+				C33205571F15601600695AEE /* CYTimePicker.storyboard */,
+				C332055C1F1562AE00695AEE /* CYTimePickerDelegate.h */,
+				C33205591F15604000695AEE /* CYTimePickerViewController.h */,
+				C332055A1F15604000695AEE /* CYTimePickerViewController.m */,
+				C3EB971E1F17020F007993FC /* ImageDetailView.storyboard */,
+				C33205631F15AFCA00695AEE /* ImageDetailViewController.h */,
+				C33205641F15AFCA00695AEE /* ImageDetailViewController.m */,
+				C3A8CBBB1F1FCCF400B30E17 /* CYMultiAction.storyboard */,
+				C3A8CBBD1F1FD8A800B30E17 /* CYMultiActionDelegate.h */,
+				C3A8CBB81F1FCCE300B30E17 /* CYMultiActionViewController.h */,
+				C3A8CBB91F1FCCE300B30E17 /* CYMultiActionViewController.m */,
+			);
+			name = DataPicker;
+			sourceTree = "<group>";
+		};
+		C3A8CBB41F1FCB8300B30E17 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8CBB51F1FCBAF00B30E17 /* GradeRecordCollectionViewCell.h */,
+				C3A8CBB61F1FCBAF00B30E17 /* GradeRecordCollectionViewCell.m */,
+			);
+			name = Elements;
+			sourceTree = "<group>";
+		};
+		C3EB97201F175970007993FC /* CampusCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB97211F17598B007993FC /* CampusCalendar.storyboard */,
+				C3EB97231F1759B5007993FC /* CampusCalendarViewController.h */,
+				C3EB97241F1759B5007993FC /* CampusCalendarViewController.m */,
+				C3EB97261F175C17007993FC /* ACI Hacienda-Bridging-Header.h */,
+			);
+			name = CampusCalendar;
+			sourceTree = "<group>";
+		};
+		C3EB972C1F188AC7007993FC /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB97321F188D57007993FC /* Elements */,
+				C3EB972D1F188AEB007993FC /* OrderFormRoot.storyboard */,
+				C3EB972F1F188B37007993FC /* OrderFormRootViewController.h */,
+				C3EB97301F188B37007993FC /* OrderFormRootViewController.m */,
+				C3EB975F1F198F0B007993FC /* OrderDetail.storyboard */,
+				C3EB97611F198F38007993FC /* OrderDetailViewController.h */,
+				C3EB97621F198F38007993FC /* OrderDetailViewController.m */,
+				C3EB974B1F198BB8007993FC /* OrderProductDetail.storyboard */,
+				C3EB97641F199164007993FC /* OrderProductDetailDelegate.h */,
+				C3EB974D1F198BD2007993FC /* OrderProductDetailViewController.h */,
+				C3EB974E1F198BD2007993FC /* OrderProductDetailViewController.m */,
+				C3EB97501F198C8F007993FC /* OrderAddonDetail.storyboard */,
+				C3EB97651F199323007993FC /* OrderAddonDetailDelegate.h */,
+				C3EB97521F198CB2007993FC /* OrderAddonDetailViewController.h */,
+				C3EB97531F198CB2007993FC /* OrderAddonDetailViewController.m */,
+				C3EB97551F198CDD007993FC /* OrderDiscountDetail.storyboard */,
+				C3EB977B1F1B6189007993FC /* OrderDiscountDetailDelegate.h */,
+				C3EB97571F198D15007993FC /* OrderDiscountDetailViewController.h */,
+				C3EB97581F198D15007993FC /* OrderDiscountDetailViewController.m */,
+				C3EB975A1F198DA8007993FC /* OrderDiscountRoot.storyboard */,
+				C3EB977C1F1C836E007993FC /* OrderDiscountRootDelegate.h */,
+				C3EB975C1F198DC4007993FC /* OrderDiscountRootViewController.h */,
+				C3EB975D1F198DC4007993FC /* OrderDiscountRootViewController.m */,
+				C3EB976B1F1A9D31007993FC /* OrderAddonRoot.storyboard */,
+				C3EB977D1F1C8620007993FC /* OrderAddonRootDelegate.h */,
+				C3EB976D1F1A9D5D007993FC /* OrderAddonRootViewController.h */,
+				C3EB976E1F1A9D5D007993FC /* OrderAddonRootViewController.m */,
+				C3EB97711F1AA613007993FC /* AddonRuleDetail.storyboard */,
+				C3EB97731F1AA62C007993FC /* AddonRuleDetailViewController.h */,
+				C3EB97741F1AA62C007993FC /* AddonRuleDetailViewController.m */,
+				C3EB97761F1AA642007993FC /* DiscountRule.storyboard */,
+				C3EB97781F1AA665007993FC /* DiscountRuleDetailViewController.h */,
+				C3EB97791F1AA665007993FC /* DiscountRuleDetailViewController.m */,
+			);
+			name = Registration;
+			sourceTree = "<group>";
+		};
+		C3EB97321F188D57007993FC /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB97331F188D7D007993FC /* OrderRootCollectionViewCell.h */,
+				C3EB97341F188D7D007993FC /* OrderRootCollectionViewCell.m */,
+				C3EB97681F19DD72007993FC /* OrderDiscountRooCollectionViewCell.h */,
+				C3EB97691F19DD72007993FC /* OrderDiscountRooCollectionViewCell.m */,
+			);
+			name = Elements;
+			sourceTree = "<group>";
+		};
+		C3EB97361F18901B007993FC /* Parents */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB97371F189040007993FC /* ParentSelection.storyboard */,
+				C3EB97411F1890DE007993FC /* ParentSelectionDelegate.h */,
+				C3EB97391F189068007993FC /* ParentSelectionViewController.h */,
+				C3EB973A1F189068007993FC /* ParentSelectionViewController.m */,
+				C3EB973F1F189096007993FC /* ParentDetail.storyboard */,
+				C3EB973C1F189087007993FC /* ParentDetailViewController.h */,
+				C3EB973D1F189087007993FC /* ParentDetailViewController.m */,
+				C3EB97421F189140007993FC /* ParentDisplay.storyboard */,
+				C3EB974A1F189572007993FC /* ParentActionDelegate.h */,
+				C3EB97471F1893E5007993FC /* ParentActionViewController.h */,
+				C3EB97481F1893E5007993FC /* ParentActionViewController.m */,
+				C3EB97441F189165007993FC /* ParentDisplayViewController.h */,
+				C3EB97451F189165007993FC /* ParentDisplayViewController.m */,
+			);
+			name = Parents;
+			sourceTree = "<group>";
+		};
+		C3EB97661F19955F007993FC /* AcademicRecord */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8CBB41F1FCB8300B30E17 /* Elements */,
+				C3A8CBB21F1FC92B00B30E17 /* GradeRecordDisplay.storyboard */,
+				C3A8CBBE1F1FDA2600B30E17 /* GradeRecordDisplayViewController.h */,
+				C3A8CBBF1F1FDA2600B30E17 /* GradeRecordDisplayViewController.m */,
+				C3A8CBC11F1FDA4900B30E17 /* GradeRecordDetail.storyboard */,
+				C3A8CBC31F1FDA5F00B30E17 /* GradeRecordDetailViewController.h */,
+				C3A8CBC41F1FDA5F00B30E17 /* GradeRecordDetailViewController.m */,
+				C3A8CBC61F1FF2D900B30E17 /* GradeSubjectRoot.storyboard */,
+				C3A8CBCB1F1FF9F600B30E17 /* GradeSubjectSelectionDelegate.h */,
+				C3A8CBC81F1FF33700B30E17 /* GradeSubjectRootViewController.h */,
+				C3A8CBC91F1FF33700B30E17 /* GradeSubjectRootViewController.m */,
+				C3A8CBCF1F1FFC8D00B30E17 /* GradeSubjectDetailViewController.h */,
+				C3A8CBD01F1FFC8D00B30E17 /* GradeSubjectDetailViewController.m */,
+			);
+			name = AcademicRecord;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3A4FC6B1F10C9EF005898EB /* ACI Hacienda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3A4FC861F10C9EF005898EB /* Build configuration list for PBXNativeTarget "ACI Hacienda" */;
+			buildPhases = (
+				3DA29A769C2FC487D31DEBB2 /* [CP] Check Pods Manifest.lock */,
+				C3A4FC681F10C9EF005898EB /* Sources */,
+				C3A4FC691F10C9EF005898EB /* Frameworks */,
+				C3A4FC6A1F10C9EF005898EB /* Resources */,
+				946368A2ED9E7890F2FB8EB6 /* [CP] Embed Pods Frameworks */,
+				A6A919521DB0272A7C1CE42E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ACI Hacienda";
+			productName = "ACI Hacienda";
+			productReference = C3A4FC6C1F10C9EF005898EB /* ACI Hacienda.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3A4FC641F10C9EF005898EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = SunshireShuttle;
+				TargetAttributes = {
+					C3A4FC6B1F10C9EF005898EB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = G4B7VYAHND;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C3A4FC671F10C9EF005898EB /* Build configuration list for PBXProject "ACI Hacienda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3A4FC631F10C9EF005898EB;
+			productRefGroup = C3A4FC6D1F10C9EF005898EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3A4FC6B1F10C9EF005898EB /* ACI Hacienda */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3A4FC6A1F10C9EF005898EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A8CBC21F1FDA4900B30E17 /* GradeRecordDetail.storyboard in Resources */,
+				C3EB97771F1AA642007993FC /* DiscountRule.storyboard in Resources */,
+				C33205451F14417E00695AEE /* SubjectDetail.storyboard in Resources */,
+				C3A4FCB31F1218FB005898EB /* Profile.storyboard in Resources */,
+				C3EB971F1F17020F007993FC /* ImageDetailView.storyboard in Resources */,
+				C332056D1F15B9FA00695AEE /* ClassDetail.storyboard in Resources */,
+				C33205581F15601600695AEE /* CYTimePicker.storyboard in Resources */,
+				C33205681F15B62100695AEE /* ClassRoot.storyboard in Resources */,
+				C3EB97721F1AA613007993FC /* AddonRuleDetail.storyboard in Resources */,
+				C33205471F14419900695AEE /* CourseDetail.storyboard in Resources */,
+				C33205321F132CC000695AEE /* StudentDetail.storyboard in Resources */,
+				C3A4FC821F10C9EF005898EB /* LaunchScreen.storyboard in Resources */,
+				C3A4FCDF1F1308BE005898EB /* DateTimeSelectorViewController.xib in Resources */,
+				C33205731F1609AB00695AEE /* TeacherRoot.storyboard in Resources */,
+				C3EB972E1F188AEB007993FC /* OrderFormRoot.storyboard in Resources */,
+				C3A8CBB31F1FC92B00B30E17 /* GradeRecordDisplay.storyboard in Resources */,
+				C3EB97601F198F0B007993FC /* OrderDetail.storyboard in Resources */,
+				C3A4FC7F1F10C9EF005898EB /* Assets.xcassets in Resources */,
+				C332057F1F16B37C00695AEE /* StudentSelect.storyboard in Resources */,
+				C3EB975B1F198DA8007993FC /* OrderDiscountRoot.storyboard in Resources */,
+				C332055E1F15686700695AEE /* WeekItemDetail.storyboard in Resources */,
+				C332053B1F1440BF00695AEE /* CourseRoot.storyboard in Resources */,
+				C3EB97381F189040007993FC /* ParentSelection.storyboard in Resources */,
+				C3EB97221F17598B007993FC /* CampusCalendar.storyboard in Resources */,
+				C3A4FCA21F118E7A005898EB /* Logon.storyboard in Resources */,
+				C3A4FCC31F12BA10005898EB /* StaffDetail.storyboard in Resources */,
+				C3EB97561F198CDD007993FC /* OrderDiscountDetail.storyboard in Resources */,
+				C3EB97511F198C8F007993FC /* OrderAddonDetail.storyboard in Resources */,
+				C3A4FCB01F121876005898EB /* StudentRoot.storyboard in Resources */,
+				C3A8CBC71F1FF2D900B30E17 /* GradeSubjectRoot.storyboard in Resources */,
+				C3EB976C1F1A9D31007993FC /* OrderAddonRoot.storyboard in Resources */,
+				C332053D1F14410300695AEE /* SubjectRoot.storyboard in Resources */,
+				C3A4FCDD1F1308BE005898EB /* DatePickerViewController.xib in Resources */,
+				C3A4FCDB1F1308BE005898EB /* DataPickerViewController.xib in Resources */,
+				C3EB974C1F198BB8007993FC /* OrderProductDetail.storyboard in Resources */,
+				C3A4FCC11F12B96D005898EB /* StaffRoot.storyboard in Resources */,
+				C3A4FC7A1F10C9EF005898EB /* Main.storyboard in Resources */,
+				C3A8CBBC1F1FCCF400B30E17 /* CYMultiAction.storyboard in Resources */,
+				C3EB97431F189140007993FC /* ParentDisplay.storyboard in Resources */,
+				C332057A1F16B31D00695AEE /* StudentListDisplay.storyboard in Resources */,
+				C3EB97401F189096007993FC /* ParentDetail.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DA29A769C2FC487D31DEBB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		946368A2ED9E7890F2FB8EB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACI Hacienda/Pods-ACI Hacienda-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6A919521DB0272A7C1CE42E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACI Hacienda/Pods-ACI Hacienda-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3A4FC681F10C9EF005898EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EB97311F188B37007993FC /* OrderFormRootViewController.m in Sources */,
+				C33205611F15687A00695AEE /* WeekItemDetailViewController.m in Sources */,
+				C3A4FC951F11714E005898EB /* CYFunctionSet.m in Sources */,
+				C3EB97591F198D15007993FC /* OrderDiscountDetailViewController.m in Sources */,
+				C3A4FCBA1F12B793005898EB /* MainTabBarController.m in Sources */,
+				C3A4FCA01F118CD7005898EB /* LinkParaDev.m in Sources */,
+				C3A4FC961F11714E005898EB /* UIViewController+CYViewController.m in Sources */,
+				C3A4FCCC1F12BE7D005898EB /* StaffRootCollectionViewCell.m in Sources */,
+				C3EB97351F188D7D007993FC /* OrderRootCollectionViewCell.m in Sources */,
+				C3EB97541F198CB2007993FC /* OrderAddonDetailViewController.m in Sources */,
+				C3A8CBBA1F1FCCE300B30E17 /* CYMultiActionViewController.m in Sources */,
+				C3A4FC9C1F11715D005898EB /* AppDataSocketConnector.m in Sources */,
+				C3A4FCDA1F1308BE005898EB /* DataPickerViewController.m in Sources */,
+				C3EB975E1F198DC4007993FC /* OrderDiscountRootViewController.m in Sources */,
+				C3A4FC741F10C9EF005898EB /* AppDelegate.m in Sources */,
+				C3A4FCDE1F1308BE005898EB /* DateTimeSelectorViewController.m in Sources */,
+				C332054E1F14433900695AEE /* CourseRootCollectionViewCell.m in Sources */,
+				C3A4FC7D1F10C9EF005898EB /* ACI_Hacienda.xcdatamodeld in Sources */,
+				C33205431F14416C00695AEE /* SubjectDetailViewController.m in Sources */,
+				C3EB97251F1759B5007993FC /* CampusCalendarViewController.m in Sources */,
+				C3A8CBCA1F1FF33700B30E17 /* GradeSubjectRootViewController.m in Sources */,
+				C332056B1F15B63400695AEE /* ClassRootViewController.m in Sources */,
+				C3EB976F1F1A9D5D007993FC /* OrderAddonRootViewController.m in Sources */,
+				C3A4FCA91F11919D005898EB /* CurrentUserManager.m in Sources */,
+				C33205351F132CDF00695AEE /* StudentDetailViewController.m in Sources */,
+				C3EB973E1F189087007993FC /* ParentDetailViewController.m in Sources */,
+				C3A4FC711F10C9EF005898EB /* main.m in Sources */,
+				C33205871F16B4F300695AEE /* StudentListDisplayViewController.m in Sources */,
+				C3EB976A1F19DD72007993FC /* OrderDiscountRooCollectionViewCell.m in Sources */,
+				C33205391F1440AC00695AEE /* CourseRootViewController.m in Sources */,
+				C3A4FCDC1F1308BE005898EB /* DatePickerViewController.m in Sources */,
+				C3A4FCAE1F121852005898EB /* StudentRootViewController.m in Sources */,
+				C33205531F14475900695AEE /* SubjectRootCollectionViewCell.m in Sources */,
+				C3EB973B1F189068007993FC /* ParentSelectionViewController.m in Sources */,
+				C3EB97631F198F38007993FC /* OrderDetailViewController.m in Sources */,
+				C3A8CBB71F1FCBAF00B30E17 /* GradeRecordCollectionViewCell.m in Sources */,
+				C33205561F14B52200695AEE /* CourseDetailDPTableViewCell.m in Sources */,
+				C3A4FC9D1F11715D005898EB /* LinkPara.m in Sources */,
+				C33205651F15AFCA00695AEE /* ImageDetailViewController.m in Sources */,
+				C3A4FCBF1F12B95D005898EB /* StaffRootViewController.m in Sources */,
+				C3EB974F1F198BD2007993FC /* OrderProductDetailViewController.m in Sources */,
+				C33205761F1609C400695AEE /* TeacherRootViewController.m in Sources */,
+				C3A4FCC91F12BAF1005898EB /* StudentRootCollectionViewCell.m in Sources */,
+				C3A4FCB61F121908005898EB /* ProfileViewController.m in Sources */,
+				C3A4FCC61F12BA38005898EB /* StaffDetailViewController.m in Sources */,
+				C3A8CBC01F1FDA2600B30E17 /* GradeRecordDisplayViewController.m in Sources */,
+				C33205401F14412400695AEE /* SubjectRootViewController.m in Sources */,
+				C332055B1F15604000695AEE /* CYTimePickerViewController.m in Sources */,
+				C332058B1F16B65600695AEE /* StudentListActionViewController.m in Sources */,
+				C332054A1F1441BA00695AEE /* CourseDetailViewController.m in Sources */,
+				C3A8CBD11F1FFC8D00B30E17 /* GradeSubjectDetailViewController.m in Sources */,
+				C3EB97751F1AA62C007993FC /* AddonRuleDetailViewController.m in Sources */,
+				C3EB977A1F1AA665007993FC /* DiscountRuleDetailViewController.m in Sources */,
+				C33205701F15BA0D00695AEE /* ClassDetailViewController.m in Sources */,
+				C3EB971C1F16EA0D007993FC /* StudentSelectViewController.m in Sources */,
+				C3EB97461F189165007993FC /* ParentDisplayViewController.m in Sources */,
+				C3EB97491F1893E5007993FC /* ParentActionViewController.m in Sources */,
+				C3A4FCA51F118E94005898EB /* LogonViewController.m in Sources */,
+				C3A8CBC51F1FDA5F00B30E17 /* GradeRecordDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C3A4FC781F10C9EF005898EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3A4FC791F10C9EF005898EB /* Base */,
+			);
+			name = Main.storyboard;
+			path = "ACI Hacienda";
+			sourceTree = "<group>";
+		};
+		C3A4FC801F10C9EF005898EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3A4FC811F10C9EF005898EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3A4FC841F10C9EF005898EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3A4FC851F10C9EF005898EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3A4FC871F10C9EF005898EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A026E5AD88CA86D728E1508 /* Pods-ACI Hacienda.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G4B7VYAHND;
+				INFOPLIST_FILE = "ACI Hacienda/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SunshireShuttle.ACI-Hacienda";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ACI Hacienda-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C3A4FC881F10C9EF005898EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DFCF120C733BDDBAE8788DF /* Pods-ACI Hacienda.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = G4B7VYAHND;
+				INFOPLIST_FILE = "ACI Hacienda/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "SunshireShuttle.ACI-Hacienda";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ACI Hacienda-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3A4FC671F10C9EF005898EB /* Build configuration list for PBXProject "ACI Hacienda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3A4FC841F10C9EF005898EB /* Debug */,
+				C3A4FC851F10C9EF005898EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3A4FC861F10C9EF005898EB /* Build configuration list for PBXNativeTarget "ACI Hacienda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3A4FC871F10C9EF005898EB /* Debug */,
+				C3A4FC881F10C9EF005898EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C3A4FC7B1F10C9EF005898EB /* ACI_Hacienda.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3A4FC7C1F10C9EF005898EB /* ACI_Hacienda.xcdatamodel */,
+			);
+			currentVersion = C3A4FC7C1F10C9EF005898EB /* ACI_Hacienda.xcdatamodel */;
+			path = ACI_Hacienda.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C3A4FC641F10C9EF005898EB /* Project object */;
+}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerViewController">
+            <connections>
+                <outlet property="dateLabel" destination="OSA-GN-zm2" id="rOr-XZ-Bvz"/>
+                <outlet property="datePicker" destination="0XD-IB-BPf" id="L02-e8-bGW"/>
+                <outlet property="keyLabel" destination="s83-WB-9Hr" id="rSn-g4-fFf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="546" height="357"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tv5-MK-qNE">
+                    <rect key="frame" x="0.0" y="0.0" width="546" height="357"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0XD-IB-BPf">
+                            <rect key="frame" x="0.0" y="141" width="546" height="216"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="546" id="J28-4I-bZ6"/>
+                                <constraint firstAttribute="height" constant="216" id="iXv-lE-5Pp"/>
+                            </constraints>
+                            <date key="date" timeIntervalSinceReferenceDate="493847762.68929303">
+                                <!--2016-08-25 19:56:02 +0000-->
+                            </date>
+                            <connections>
+                                <action selector="dateDidChange:" destination="-1" eventType="valueChanged" id="lTc-7E-Oko"/>
+                            </connections>
+                        </datePicker>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epV-sz-3uL">
+                            <rect key="frame" x="8" y="8" width="48" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="VNU-ou-zfA"/>
+                                <constraint firstAttribute="width" constant="48" id="bfa-zI-0JF"/>
+                            </constraints>
+                            <state key="normal" title="Cancel"/>
+                            <connections>
+                                <action selector="didClickCancel:" destination="-1" eventType="touchUpInside" id="e0I-C5-sZ9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7m-so-zpW">
+                            <rect key="frame" x="255" y="8" width="36" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="E6s-0l-4rg"/>
+                                <constraint firstAttribute="height" constant="30" id="Qxw-ey-0FY"/>
+                            </constraints>
+                            <state key="normal" title="Clear"/>
+                            <connections>
+                                <action selector="didClickClear:" destination="-1" eventType="touchUpInside" id="uCd-gT-iQ6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0v-c3-KS1">
+                            <rect key="frame" x="504" y="8" width="34" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="eWw-o5-ETD"/>
+                                <constraint firstAttribute="width" constant="34" id="zPD-PZ-boH"/>
+                            </constraints>
+                            <state key="normal" title="Save"/>
+                            <connections>
+                                <action selector="didClickSave:" destination="-1" eventType="touchUpInside" id="fha-dS-fr8"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSA-GN-zm2">
+                            <rect key="frame" x="8" y="93" width="530" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="c1c-Yi-CzO"/>
+                                <constraint firstAttribute="width" constant="530" id="suv-xR-u3u"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="Date">
+                                    <attributes>
+                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <font key="NSFont" size="17" name="HelveticaNeue-BoldItalic"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s83-WB-9Hr">
+                            <rect key="frame" x="8" y="46" width="530" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="530" id="Ge9-3A-DRc"/>
+                                <constraint firstAttribute="height" constant="40" id="tkO-4Y-vPH"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="Key">
+                                    <attributes>
+                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <font key="NSFont" size="17" name="HelveticaNeue-BoldItalic"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="s83-WB-9Hr" firstAttribute="leading" secondItem="Tv5-MK-qNE" secondAttribute="leading" constant="8" id="3ce-9p-Eu6"/>
+                        <constraint firstItem="0XD-IB-BPf" firstAttribute="leading" secondItem="Tv5-MK-qNE" secondAttribute="leading" id="8DT-0U-RMa"/>
+                        <constraint firstItem="OSA-GN-zm2" firstAttribute="top" secondItem="s83-WB-9Hr" secondAttribute="bottom" constant="7" id="BML-jD-tBI"/>
+                        <constraint firstAttribute="bottom" secondItem="0XD-IB-BPf" secondAttribute="bottom" id="CPu-e6-Gsm"/>
+                        <constraint firstAttribute="trailing" secondItem="o0v-c3-KS1" secondAttribute="trailing" constant="8" id="G5S-eI-7lr"/>
+                        <constraint firstItem="0XD-IB-BPf" firstAttribute="top" secondItem="OSA-GN-zm2" secondAttribute="bottom" constant="8" id="LOl-qW-XXq"/>
+                        <constraint firstAttribute="trailing" secondItem="OSA-GN-zm2" secondAttribute="trailing" constant="8" id="NwH-iQ-CLY"/>
+                        <constraint firstItem="OSA-GN-zm2" firstAttribute="leading" secondItem="Tv5-MK-qNE" secondAttribute="leading" constant="8" id="O9D-Tn-gAF"/>
+                        <constraint firstItem="s83-WB-9Hr" firstAttribute="top" secondItem="o7m-so-zpW" secondAttribute="bottom" constant="8" id="ZUS-4W-i5u"/>
+                        <constraint firstItem="o7m-so-zpW" firstAttribute="centerX" secondItem="Tv5-MK-qNE" secondAttribute="centerX" id="aM4-PX-I6q"/>
+                        <constraint firstItem="epV-sz-3uL" firstAttribute="leading" secondItem="Tv5-MK-qNE" secondAttribute="leading" constant="8" id="ilZ-g6-vbJ"/>
+                        <constraint firstAttribute="trailing" secondItem="s83-WB-9Hr" secondAttribute="trailing" constant="8" id="lbn-C9-LuL"/>
+                        <constraint firstItem="s83-WB-9Hr" firstAttribute="top" secondItem="o0v-c3-KS1" secondAttribute="bottom" constant="8" id="syf-tk-3xI"/>
+                        <constraint firstAttribute="trailing" secondItem="0XD-IB-BPf" secondAttribute="trailing" id="tNz-3d-5vW"/>
+                        <constraint firstItem="s83-WB-9Hr" firstAttribute="top" secondItem="epV-sz-3uL" secondAttribute="bottom" constant="8" id="vIc-u3-SUF"/>
+                        <constraint firstAttribute="height" constant="357" id="y1F-97-crQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Tv5-MK-qNE" secondAttribute="bottom" id="QC2-xy-iqB"/>
+                <constraint firstAttribute="trailing" secondItem="Tv5-MK-qNE" secondAttribute="trailing" id="QK7-ar-Skb"/>
+                <constraint firstItem="Tv5-MK-qNE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cGq-uG-j3G"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="293" y="390.5"/>
+        </view>
+    </objects>
+</document>

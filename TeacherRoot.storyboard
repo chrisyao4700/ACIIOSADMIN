@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u16-ZV-Mpc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Teacher Root View Controller-->
+        <scene sceneID="WXX-pO-ipb">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="u16-ZV-Mpc" customClass="TeacherRootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AI3-HB-c2I"/>
+                        <viewControllerLayoutGuide type="bottom" id="rXp-32-TDs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fqf-LB-cFa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3AL-jC-u29">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="U0L-j0-FnR"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="u16-ZV-Mpc" id="I0V-fT-SMK"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yIT-YN-0n5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="0.10437178938356165" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="info_cell" textLabel="xDO-2u-wSb" detailTextLabel="fpP-5v-Y5m" style="IBUITableViewCellStyleValue1" id="Tt4-pw-wgM">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tt4-pw-wgM" id="gwB-wf-Mi1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xDO-2u-wSb">
+                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fpP-5v-Y5m">
+                                                    <rect key="frame" x="316" y="12" width="44" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="u16-ZV-Mpc" id="rUB-2c-9S9"/>
+                                    <outlet property="delegate" destination="u16-ZV-Mpc" id="P8B-DT-5IH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rXp-32-TDs" firstAttribute="top" secondItem="yIT-YN-0n5" secondAttribute="bottom" id="0ic-SW-YGi"/>
+                            <constraint firstItem="3AL-jC-u29" firstAttribute="top" secondItem="AI3-HB-c2I" secondAttribute="bottom" id="5Bg-FG-t8L"/>
+                            <constraint firstAttribute="trailing" secondItem="3AL-jC-u29" secondAttribute="trailing" id="JVo-qx-lSO"/>
+                            <constraint firstItem="yIT-YN-0n5" firstAttribute="top" secondItem="3AL-jC-u29" secondAttribute="bottom" id="mXq-sa-Nbb"/>
+                            <constraint firstItem="3AL-jC-u29" firstAttribute="leading" secondItem="Fqf-LB-cFa" secondAttribute="leading" id="oH6-pI-Rq3"/>
+                            <constraint firstItem="yIT-YN-0n5" firstAttribute="leading" secondItem="Fqf-LB-cFa" secondAttribute="leading" id="rSI-AT-rE2"/>
+                            <constraint firstAttribute="trailing" secondItem="yIT-YN-0n5" secondAttribute="trailing" id="reR-Ic-tuO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentTable" destination="yIT-YN-0n5" id="rVH-St-IqE"/>
+                        <outlet property="searchBar" destination="3AL-jC-u29" id="cuS-Vb-ZTS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cC6-zi-dgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="-93.103448275862078"/>
+        </scene>
+    </scenes>
+</document>

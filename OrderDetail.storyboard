@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uu8-GM-R25">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Order Detail View Controller-->
+        <scene sceneID="gbd-LK-7Oq">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="uu8-GM-R25" customClass="OrderDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lUc-FM-ZyM"/>
+                        <viewControllerLayoutGuide type="bottom" id="z1P-1v-Jmp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fMd-nQ-Ci9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4N5-gD-Ulb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="0.10257919520547945" colorSpace="calibratedWhite"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="dDt-el-hFu" userLabel="Footer">
+                                    <rect key="frame" x="0.0" y="72" width="375" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="info_cell" textLabel="PPG-tL-YCG" detailTextLabel="kHn-zi-drV" style="IBUITableViewCellStyleValue1" id="JRY-xx-nEe">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JRY-xx-nEe" id="w0q-mm-hbH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PPG-tL-YCG">
+                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kHn-zi-drV">
+                                                    <rect key="frame" x="316" y="12" width="44" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uu8-GM-R25" id="07X-jQ-am8"/>
+                                    <outlet property="delegate" destination="uu8-GM-R25" id="Ilh-Ds-2VD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4N5-gD-Ulb" secondAttribute="trailing" id="2Bt-6M-Qkc"/>
+                            <constraint firstItem="4N5-gD-Ulb" firstAttribute="top" secondItem="lUc-FM-ZyM" secondAttribute="bottom" id="6OE-h3-Lvs"/>
+                            <constraint firstItem="z1P-1v-Jmp" firstAttribute="top" secondItem="4N5-gD-Ulb" secondAttribute="bottom" id="T6y-Ba-bm0"/>
+                            <constraint firstItem="4N5-gD-Ulb" firstAttribute="leading" secondItem="fMd-nQ-Ci9" secondAttribute="leading" id="ZDN-Fy-5kF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentTable" destination="4N5-gD-Ulb" id="clF-E5-pa1"/>
+                        <segue destination="XcU-kp-WgA" kind="show" identifier="toParentSelection" id="elL-9P-oj5"/>
+                        <segue destination="Jej-vx-7RA" kind="show" identifier="toParentDetail" id="Wmz-53-8xs"/>
+                        <segue destination="q7N-7l-8rk" kind="show" identifier="toProductDetail" id="iEI-HJ-Pe0"/>
+                        <segue destination="OVU-cj-UfQ" kind="show" identifier="toAddonDetail" id="asi-gK-RKp"/>
+                        <segue destination="8n0-SD-ml8" kind="show" identifier="toDiscountDetail" id="H0c-gH-ju3"/>
+                        <segue destination="ABI-jA-zcF" kind="show" identifier="toAddonSelection" id="hae-cE-Qmn"/>
+                        <segue destination="am1-0h-I9E" kind="show" identifier="toDiscountSelection" id="kmX-GI-yXv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whX-nZ-JZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2000000000000002" y="105.69715142428787"/>
+        </scene>
+        <!--OrderDiscountRoot-->
+        <scene sceneID="rD9-JV-N51">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OrderDiscountRoot" id="am1-0h-I9E" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JYc-zo-5ad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578" y="-241"/>
+        </scene>
+        <!--OrderAddonRoot-->
+        <scene sceneID="aij-FM-u6b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OrderAddonRoot" id="ABI-jA-zcF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lH8-iX-Yws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="-143"/>
+        </scene>
+        <!--ParentSelection-->
+        <scene sceneID="jgv-Wm-N89">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ParentSelection" id="XcU-kp-WgA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3f-yy-3jn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="-59"/>
+        </scene>
+        <!--ParentDetail-->
+        <scene sceneID="JJe-ZR-GZE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ParentDetail" id="Jej-vx-7RA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LD0-Gz-KXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615" y="24"/>
+        </scene>
+        <!--OrderProductDetail-->
+        <scene sceneID="DCj-HW-zlA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OrderProductDetail" id="q7N-7l-8rk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Taa-R2-1bX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="642" y="105"/>
+        </scene>
+        <!--OrderAddonDetail-->
+        <scene sceneID="KCF-JS-jAQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OrderAddonDetail" id="OVU-cj-UfQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dS6-Ac-MNL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="206"/>
+        </scene>
+        <!--OrderDiscountDetail-->
+        <scene sceneID="y9B-nd-fx2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OrderDiscountDetail" id="8n0-SD-ml8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYZ-kz-KQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="585" y="284"/>
+        </scene>
+    </scenes>
+</document>
